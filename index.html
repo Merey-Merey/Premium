@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон жалюзи Премиум</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип слева -->
+            <div class="logo">
+                <img src="./images/logo.png" alt="Логотип Салон жалюзи Премиум">
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#roll">Роллшторы</a></li>
+                    <li><a href="#blinds">Жалюзи</a></li>
+                    <li><a href="#pleasse">Плиссэ</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">Почему мы</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn btn-primary">Свяжитесь с нами</button>
+        </div>
+    </header>
+
+    <!-- ГЕРОЙ-СЕКЦИЯ -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./videos/жалюзи.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1>Салон жалюзи <br><span>Премиум</span></h1>
+                <p>Стиль, защита и комфорт под ваш интерьер</p>
+                <button class="btn btn-secondary">Напишите нам</button>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- Рулонные шторы -->
+    <section id="roll" class="product-section">
+        <div class="container">
+            <h2>Рулонные шторы</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./images/Рулонные шторы (классические).png" alt="Рулонные шторы">
+                        <div class="item-caption">
+                            <h3>Рулонные шторы (классические)</h3>
+                            <p>от 10 000 тг</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Блэкауты (полное затенение).png" alt="Блэкауты">
+                        <div class="item-caption">
+                            <h3>Блэкауты (полное затенение)</h3>
+                            <p>от 10 000 тг</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/zebra.png" alt="День и ночь">
+                        <div class="item-caption">
+                            <h3>День и ночь <br>(зебра)</h3>
+                            <p>от 10 000 тг</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/duet.png" alt="Ролл шторы Дуэт">
+                        <div class="item-caption">
+                            <h3>Ролл шторы Дуэт (Двойные)</h3>
+                            <p>от 10 000 тг</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вертикальные жалюзи -->
+<section class="vertical-blinds-section dark-bg">
+    <div class="container">
+        <h2>Вертикальные жалюзи</h2>
+        <div class="blinds-slider">
+            <div class="blinds-slides">
+                <!-- Слайд 1 -->
+                <div class="blinds-slide">
+                    <img src="./images/vertical.png" alt="Вертикальные">
+                    <div class="slide-info">
+                        <h3>Вертикальные</h3>
+                        <p>от 10 000 тг</p>
+                    </div>
+                </div>
+
+                <!-- Слайд 2 -->
+                <div class="blinds-slide">
+                    <img src="./images/verticalPlastic.png" alt="Вертикальные пластиковые">
+                    <div class="slide-info">
+                        <h3>Вертикальные пластиковые</h3>
+                        <p>от 10 000 тг</p>
+                    </div>
+                </div>
+
+                <!-- Слайд 3 -->
+                <div class="blinds-slide">
+                    <img src="./images/verticalAllumniun.png" alt="Вертикальные алюминиевые">
+                    <div class="slide-info">
+                        <h3>Вертикальные алюминиевые</h3>
+                        <p>от 10 000 тг</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопки навигации -->
+            <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- Индикаторы (точки) -->
+            <div class="slider-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Горизонтальные жалюзи -->
+    <section class="product-section">
+        <div class="container">
+        <h2>Горизонтальные жалюзи</h2>
+        <div class="blinds-slider">
+            <div class="blinds-slides">
+                <!-- Слайд 1 -->
+                <div class="blinds-slide">
+                    <img src="./images/Горизонтальные жалюзи алюминиевые (25 мм ламели).png" >
+                    <div class="slide-info">
+                        <h3 style="color: #151515; font-size: 18px; font-weight: 500;">Горизонтальные жалюзи алюминиевые (25 мм ламели)</h3>
+                        <p style="color: #555555;"> от 10 000 тг</p>
+                    </div>
+                </div>
+
+                <!-- Слайд 2 -->
+                <div class="blinds-slide">
+                    <img src="./images/Горизонтальные жалюзи дерево (50 мм ламели).png">
+                    <div class="slide-info">
+                        <h3 style="color: #151515; font-size: 18px; font-weight: 500;">Горизонтальные жалюзи <br> дерево (50 мм ламели)</h3>
+                        <p style="color: #555555;"> от 10 000 тг</p>
+                    </div>
+                </div>
+
+                <!-- Слайд 3 -->
+                <div class="blinds-slide">
+                    <img src="./images/Горизонтальные жалюзи на электроприводе .png" >
+                    <div class="slide-info">
+                        <h3 style="color: #151515; font-size: 18px; font-weight: 500;">Горизонтальные жалюзи на электроприводе</h3>
+                        <p style="color: #555555;"> от 10 000 тг</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопки навигации -->
+            <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- Индикаторы (точки) -->
+            <div class="slider-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Система ПЛИССЕ -->
+    <section id="pleasse" class="product-section dark-bg">
+        <div class="container">
+            <h2>Система ПЛИССЕ</h2>
+             <div class="blinds-slider">
+            <div class="blinds-slides">
+                <!-- Слайд 1 -->
+                <div class="blinds-slide">
+                        <img src="./images/Жалюзи плиссе (обычные).png" alt="Плиссэ обычные">
+                        <div class="item-caption">
+                            <h3>Жалюзи плиссэ (обычные)</h3>
+                            <p style="color: #CDCDCD;">от 10 000 тг</p>
+                        </div>
+                    </div>
+                <div class="blinds-slide">
+                        <img src="./images/Жалюзи плиссе (блекаут).png" alt="Плиссэ блекаут">
+                        <div class="item-caption">
+                            <h3>Жалюзи плиссэ (блекаут)</h3>
+                            <p style="color: #CDCDCD;">от 10 000 тг</p>
+                        </div>
+                    </div>
+                <div class="blinds-slide">
+                        <img src="./images/Москитная сетка ПЛИССЕ .png" alt="Москитная сетка">
+                        <div class="item-caption">
+                            <h3>Москитная сетка ПЛИССЕ</h3>
+                            <p style="color: #CDCDCD;">от 10 000 тг</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопки навигации -->
+            <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- Индикаторы (точки) -->
+            <div class="slider-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши преимущества -->
+    <section class="advantages-section">
+        <div class="container">
+            <h2>Наши преимущества</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="icon"><i class="fas fa-industry"></i></div>
+                    <h3>Собственное производство и выставочный зал</h3>
+                    <p>Склад и цех находятся в собственности, не в аренде.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Опыт работы с крупными заказчиками</h3>
+                    <p>Строительные компании, холдинги, госструктуры и гостиничные сети (подтверждено актами и договорами).</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <h3>Гибкие формы оплаты</h3>
+                    <p>Наличные, Kaspi QR, кредит, рассрочка, удаленные и безналичные расчеты с НДС и без.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>Профессиональная команда и быстрый монтаж</h3>
+                    <p>Постоянный штат сотрудников, четкое распределение обязанностей, высокое качество и скорость работы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- АКЦИЯ -->
+<section class="promo-section">
+    <div class="hero-overlay"></div>
+
+    <div class="promo-bg" style="background-image: url('./images/sale.png');"></div>
+
+    <div class="containerr">
+        <div class="promo-content">
+            <h2>Скидка -20% <br>на роллшторы</h2>
+            <p>Акция действует до конца месяца</p>
+            <button class="btn btn-secondary">Напишите нам</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Как мы работаем -->
+    <section class="process-section">
+        <div class="container">
+            <h2>Как мы работаем</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-step-forward"></i></div>
+                    <h3>Первый шаг</h3>
+                    <p>Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-step-forward"></i></div>
+                    <h3>Второй шаг</h3>
+                    <p>Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-step-forward"></i></div>
+                    <h3>Третий шаг</h3>
+                    <p>Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-step-forward"></i></div>
+                    <h3>Четвертый шаг</h3>
+                    <p>Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши работы -->
+  <section class="portfolio-section">
+  <div class="container">
+    <h2>Наши работы</h2>
+    <div class="portfolio-slider">
+      <div class="slide"><img src="./images/rabota-1.png" alt="Работа 1"></div>
+      <div class="slide"><img src="./images/rabota.png" alt="Работа 2"></div>
+      <div class="slide"><img src="./images/rabota-3.png" alt="Работа 3"></div>
+      <div class="slide"><img src="./images/rabota-4.png" alt="Работа 4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- О компании -->
+ <section class="about-section">
+  <img src="./images/оКомпании.png" alt="О компании фон" class="about-bg">
+  <div class="about-overlay"></div>
+  <div class="containeer">
+    <div class="about-content">
+      <h2>О компании</h2>
+      <p>Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят правильный текст.</p>
+      <p>Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят правильный текст. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Это текст о компании.</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Отзывы клиентов -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="avatar"><img src="./images/avatar.png" alt=""></div>
+                        <div class="reviewer-info">
+                            <h3>Aidana Sh</h3>
+                            <span>10 октября 2025</span>
+                        </div>
+                    </div>
+                    <p>Рекомендую данную компанию. Понравился сервис от начала до завершения работ. <br> <p> Согласовали время.</p>  <p>Приехали во время и на замеры, и на установку. Шторы были готовы на следующий день.</p> Установили быстро и аккуратно.</p>
+                    <a href="#" class="read-more">Читать в 2GIS</a>
+                </div>
+                <div class="review-video">
+                    <img src="./images/review.png" alt="Видео отзывы">
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="avatar"><img src="./images/avatar.png" alt=""></div>
+                        <div class="reviewer-info">
+                            <h3>Асель Каркабекова</h3>
+                            <span>14 апреля 2025</span>
+                        </div>
+                    </div>
+                    <p>Спасибо большое вашей <br> компании за проделанную <br>работу! Сервис на высшем <br> уровне! Замер, изготовление, <br> установка все очень <br> быстро,оперативно, качественно! <br> Цены тоже радуют! <p>Очень вежливые, профессиональные мастера!</p></p>
+                    <a href="#" class="read-more">Читать в 2GIS</a>
+                </div>
+            </div>
+            <div class="carousel-dots">
+            <!-- Индикаторы (точки) -->
+            <div class="slider-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div></div>
+        </div>
+    </section>
+
+    <!-- Производство и установка -->
+    <section class="production-section">
+        <div class="container">
+            <div class="production-content">
+                <div class="production-image">
+                    <img src="./images/proizvodst.png" alt="Производство">
+                </div>
+                <div class="production-text">
+                    <h2>Как мы производим и устанавливаем продукцию</h2>
+                    <p>Это текст о компании. Он необходим для дальнейшего <br> продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят <br> правильный текст.</p> <br>
+                    <p>Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят правильный текст. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят правильный текст.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+ <!-- галерея работы -->
+  <section class="portfolio-section">
+  <div class="container">
+    <h2>Галерея</h2>
+    <div class="portfolio-slider">
+      <div class="slide"><img src="./images/gallery-1.png" alt="Работа 1"></div>
+      <div class="slide"><img src="./images/galley-2.png" alt="Работа 2"></div>
+      <div class="slide"><img src="./images/gallery-3.png" alt="Работа 3"></div>
+            <div class="slide"><img src="./images/gallery-4.png" alt="Работа 3"></div>
+
+    </div>
+  </div>
+</section>
+
+   <!-- Вопросы -->
+<section class="faq-section">
+  <div class="promo-bg"></div>
+    <div class="hero-overlaay"></div>
+
+  <div class="containner">
+    <div class="faq-content">
+      <h2>У вас остались <br> вопросы?</h2>
+      <p>Оставьте заявку! Наш менеджер свяжется <br> с вами и составит вам коммерческое <br> предложение!</p>
+      <button class="btn btn-primary">Свяжитесь с нами</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Партнеры и клиенты -->
+    <section class="partners-section">
+        <div class="container">
+            <h2>Партнеры и клиенты</h2>
+            <div class="partners-grid">
+                <div class="partner-logo">ЛОГО</div>
+                <div class="partner-logo">ЛОГО</div>
+                <div class="partner-logo">ЛОГО</div>
+                <div class="partner-logo">ЛОГО</div>
+            </div>
+            <div class="carousel-dots"> <div class="slider-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div></div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="Логотип Салон жалюзи Премиум">
+            </div>
+
+            <!-- Контакты -->
+            <div class="footer-contacts">
+                <h3>КОНТАКТЫ</h3>
+                <p>Казахстан, Астана, улица <br>Кордай, 83, 1 этаж</p>
+                <p>Пн — Сб с 10:00 до 20:00</p>
+            </div>
+ <div class="phone-numbers">
+                    <span>+7-700-020-77-33</span>
+                    <span>+7-701-599-03-37</span>
+                </div>
+            <!-- Соцсети и кнопка -->
+            <div class="footer-social">
+                <div class="sociial-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <button class="btn btn-primary">Свяжитесь с нами</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>abc design</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
