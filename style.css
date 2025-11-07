@@ -412,32 +412,6 @@ body {
     background-color: #d49a3b; /* Оранжевый акцент */
 }
 
-/* Адаптив */
-@media (max-width: 768px) {
-    .blinds-slide {
-        flex: 0 0 calc(50% - 10px);
-    }
-
-    .slider-arrow {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .prev-arrow {
-        left: 5px;
-    }
-
-    .next-arrow {
-        right: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .blinds-slide {
-        flex: 0 0 100%;
-    }
-}
 /* преимущества */
 .advantages-grid {
     display: grid;
@@ -653,19 +627,7 @@ body {
   margin: 0 auto;
 }
 
-/* Адаптивность */
-@media (max-width: 768px) {
-  .about-section {
-    height: auto;
-    padding: 60px 0;
-  }
-  .about-content h2 {
-    font-size: 28px;
-  }
-  .about-content {
-    max-width: 100%;
-  }
-}
+
 /* отзывы */
 .reviews-container {
     display: grid;
@@ -978,58 +940,415 @@ body {
     color: #999;
     font-size: 12px;
 }
+.nav-toggle{
+    display: none;
+}
+/* ====================== МОБИЛЬНАЯ ВЕРСИЯ (до 768px) ====================== */
 @media (max-width: 768px) {
-  .header .container {
-        flex-direction: column;
-        padding: 10px;
+   .header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 0;
+        z-index: 1000;
+    }
+
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+     .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    /* Бургер-меню — скрыто по умолчанию */
+    .nav {
+        position: fixed;
+        top: 70px; /* под header */
+        left: 0;
+        width: 100%;
+        padding: 20px 16px;
+        z-index: 999;
+        transform: translateY(-112%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        border-radius: 0 0 8px 8px;
+    }
+
+    .nav.active {
+        transform: translateY(0);
     }
 
     .nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
     .nav li a {
-        font-size: 12px;
+        color: white;
+        font-size: 18px;
+        padding: 12px 0;
+        display: block;
+        text-decoration: none;
+        transition: color 0.2s;
+        letter-spacing: 0.5px;
+    }
+
+    .nav li a:hover {
+        color: #d49a3b;
+    }
+
+    .btn-primary {
+        display: none;
+    }
+
+
+    /* Герой */
+    .hero {
+        height: 100vh;
+        padding-top: 70px; /* учитываем фиксированный header */
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .hero-content {
+        transform: none;
+        text-align: center;
+        max-width: 90%;
+        padding: 0 16px;
+        margin: 0 auto;
     }
 
     .hero-content h1 {
-        font-size: 32px;
+        font-size: 36px;
+        line-height: 1.3;
     }
 
     .hero-content p {
         font-size: 16px;
     }
 
+    .btn-secondary {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    /* Соцсети — чуть выше и правее */
     .social-icons {
-        bottom: 10px;
-        right: 10px;
+        bottom: 70px;
+        right: 16px;
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    /* Секции */
+    .product-section,
+    .advantages-section,
+    .promo-section,
+    .process-section,
+    .portfolio-section,
+    .about-section,
+    .reviews-section,
+    .production-section,
+    .faq-section,
+    .partners-section {
+        padding: 40px 0;
+    }
+
+    section h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Карусель (роллшторы) → горизонтальный свайп */
+    .carousel-inner {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        gap: 16px;
+        padding: 10px 0;
+        scrollbar-width: none;
+    }
+
+    .carousel-inner::-webkit-scrollbar {
+        display: none;
     }
 
     .carousel-item {
-        flex: 0 0 calc(50% - 10px);
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        min-width: 280px;
     }
 
-    .advantages-grid,
-    .process-steps,
-    .portfolio-grid,
-    .reviews-container,
-    .gallery-grid,
-    .partners-grid {
+    .carousel-item img {
+        height: 220px;
+    }
+
+    .item-caption h3 {
+        font-size: 17px;
+    }
+
+    .item-caption p {
+        font-size: 15px;
+    }
+
+    /* Скрыть стрелки карусели на мобильных (лучше свайп) */
+    .carousel-btn {
+        display: none;
+    }
+
+    /* Вертикальные/горизонтальные жалюзи — тоже свайп */
+    .blinds-slides {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        gap: 16px;
+        padding: 10px 0;
+        scrollbar-width: none;
+    }
+
+    .blinds-slides::-webkit-scrollbar {
+        display: none;
+    }
+
+    .blinds-slide {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        min-width: 280px;
+    }
+
+    .blinds-slide img {
+        height: 220px;
+    }
+
+    .slide-info h3 {
+        font-size: 16px;
+    }
+
+    .slide-info p {
+        font-size: 15px;
+    }
+
+    /* Скрыть стрелки и точки на малых экранах (либо оставить только точки) */
+    .slider-arrow,
+    .slider-indicators,
+    .carousel-dots {
+        display: none;
+    }
+
+    /* Преимущества */
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .advantage-card h3 {
+        font-size: 18px;
+    }
+
+    .advantage-card p {
+        font-size: 14px;
+    }
+
+    /* Промо-акция */
+    .promo-section {
+        height: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .promo-content {
+        padding: 20px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .promo-content h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .promo-content p {
+        font-size: 15px;
+    }
+
+    /* Процесс работы */
+    .process-steps {
         grid-template-columns: 1fr;
     }
 
+    .step h3 {
+        font-size: 18px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+
+    /* Портфолио — один слайд */
+    .portfolio-slider {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 10px 0;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 280px;
+    }
+
+    /* О компании */
+    .about-section {
+        height: auto;
+        padding: 80px 0 40px;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .about-content h2 {
+                text-align: center;
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    /* Отзывы */
+    .reviews-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .review-card p {
+        font-size: 15px;
+        line-height: 1.5;
+        width: auto;
+    }
+
+    .review-video img {
+        height: 240px;
+    }
+
+    .play-button {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
+
+    /* Производство */
     .production-content {
         flex-direction: column;
+        gap: 24px;
+    }
+
+    .production-image .image-row {
+        flex-wrap: wrap;
+    }
+
+    .production-image img {
+        width: calc(50% - 5px);
+        height: 160px;
+    }
+
+    .production-text h2 {
+        font-size: 28px;
+    }
+
+    .production-text p {
+        font-size: 15px;
+    }
+
+    /* Вопросы */
+    .faq-section {
+        padding: 100px 16px;
+        text-align: center;
     }
 
     .faq-content h2 {
         font-size: 32px;
+                text-align: center;
     }
 
+    .faq-content p {
+        font-size: 16px;
+    }
+
+    /* Партнёры */
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Футер */
     .footer-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .footer-contacts,
+    .footer-social {
+        text-align: left;
+    }
+
+    .footer-logo img {
+        height: 50px;
+    }
+
+    .phone-numbers {
+        flex-direction: row;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .sociial-icons {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
     }
 }
+
+

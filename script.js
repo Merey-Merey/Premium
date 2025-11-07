@@ -109,3 +109,13 @@ setInterval(() => {
   dots.forEach(d => d.classList.remove('active'));
   dots[index].classList.add('active');
 }, 4000);
+
+
+// Бургер-меню
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    navToggle.classList.toggle('active');
+});
